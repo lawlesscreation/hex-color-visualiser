@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HTML Hex color visualiser</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <h1 class="navbar-brand">HTML Hex color visualiser</h1>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <p>A quick and dirty tool for visualising and comparing hex colors. Useful in combination with something like <a href="https://www.npmjs.com/package/parker">Parker</a> for comparing all colours within your CSS.</p>
+
+            <div class="form-group">
+                <label for="textarea">Hex codes</label>
+                <textarea class="form-control" id="textarea" rows="10">
+#FFFF00
+#000000
+#C0C0C0
+#F5F5F5
+#039DFF
+#FFFFFF
+#909495
+#F9FBFA
+#A11360
+#EEEEEE
+#D9EDF7
+#BCE8F1
+#2A627D
+                </textarea>
+            </div>
+            <button class="btn btn-primary">Show me&hellip;</button>
+        </div>
+
+        <ul class="tiles"></ul>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+/*
+    Bootstrap overwrites
+*/
+.navbar {
+    border-radius: 0;
+}
+
+.navbar .navbar-brand {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.btn-default {
+    margin-left: 10px;
+}
+
+/*
+    Tiles
+*/
+.tiles {
+    list-style: none;
+    margin: 1em 0;
+    padding: 0;
+    text-align: center;
+}
+
+.tile-details-visible .tile .tile-details {
+    bottom: 0;
+}
+
+.tile {
+    cursor: move;
+    display: inline-block;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    vertical-align: top;
+    width: 200px;
+}
+
+.tile:hover {
+    z-index: 500;
+}
+
+.tile .tile-details {
+    background: rgba(0,0,0,.33);
+    color: #fff;
+    bottom: 100%;
+    left: 0;
+    padding: 5px 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.tile:hover .tile-details {
+    bottom: 0;
+    color: #fff;
+}
+
+.tile .tile-hex code,
+.tile .tile-rgb code {
+    background-color: #444;
+    color: #fff;
+    cursor: text;
+}
