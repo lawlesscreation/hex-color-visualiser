@@ -19,9 +19,7 @@
 */
 .tiles {
     list-style: none;
-    margin: 1em 0;
-    padding: 0;
-    text-align: center;
+    margin: 1em 0.75em;
 }
 
 .tile-details-visible .tile .tile-details {
@@ -63,4 +61,8 @@
     background-color: #444;
     color: #fff;
     cursor: text;
+}
+.invalid-color{
+    top: 45%;
+    position: relative;
 }
